@@ -1,14 +1,10 @@
-.intro {
-  /*box-sizing: border-box;*/
-  /*margin: 30px;*/
-  /*border: 1px solid blue;*/
+.input-container {
   min-height: 100vh;
   background: lightgreen;
   position: relative;
-  /*padding: 0 10rpx;*/
 }
 
-.dialog {
+.input-scroll-view {
   height: calc(100vh - 180rpx);
 }
 .scroll-content {
@@ -33,18 +29,6 @@
   border: 1px solid green;
   text-align: right;
   margin-bottom: 30rpx;
-}
-.section {
-  position: absolute;
-  background: black;
-  width: 100%;
-  bottom: 0;
-}
-.section input {
-  background: lightsalmon;
-  width: 100%;
-  margin-bottom: 100rpx;
-  height: 80rpx;
 }
 
 .controls {

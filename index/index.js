@@ -3,7 +3,7 @@ const app = getApp();
 Page({
   data: {
     focused: false,
-    dialogClass: '',
+    contentClass: '',
     answers: [],
     inputValue: '',
     scrollTop: 0
@@ -19,14 +19,14 @@ Page({
   },
   onInputFocus(e) {
     this.setData({
-      dialogClass: 'moveToBottom',
+      contentClass: 'moveToBottom',
       focused: true,
       scrollTop: 10000
     });
   },
   onInputBlur(e) {
     this.setData({
-      dialogClass: 'moveToTop',
+      contentClass: 'moveToTop',
       focused: false
     });
   },
@@ -53,8 +53,5 @@ Page({
       answers: [...answers, inputValue],
       inputValue: '' // Last but not least, empty the input box.
     });
-  },
-  formReset() {
-    console.log('reset');
   }
 });
