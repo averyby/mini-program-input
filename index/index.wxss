@@ -5,10 +5,10 @@
 }
 
 .input-scroll-view {
-  height: calc(100vh - 180rpx);
+  height: calc(100vh - 280rpx);
 }
 .scroll-content {
-  min-height: calc(100vh - 180rpx);
+  min-height: calc(100vh - 280rpx);
   background: yellow;
   display: flex;
   flex-direction: column;
@@ -45,9 +45,26 @@
   width: 100%;
   bottom: 0;
 }
+.first-input-view {
+  border: 1px solid red;
+  
+}
+.first-input-view input {
+  margin-bottom: 200rpx;
+}
+
+.second-input-view {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.second-input-view input {
+
+  margin-bottom: 100rpx;
+}
 .section input {
   background: lightsalmon;
   width: 100%;
-  margin-bottom: 100rpx;
   height: 80rpx;
 }
