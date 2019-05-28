@@ -18,16 +18,18 @@
         <!--下面的 value 属性文档上说只是作为初始值，并不类似 React
         中的受控属性，然而却可以在事件里setData来改变输入框的值。但即使
         将它设置为字符串常量，也同样可以输入进去。-->
-        <input adjust-position="{{true}}"
-               value="{{inputValue}}"
-               bind:focus="onInputFocus"
-               bind:blur="onInputBlur"
-               bindinput="onInput"
-               bind:confirm="onConfirm"
-               confirm-hold="{{true}}"
-               focus="{{false}}"
-               confirm-type="send"
-               placeholder="这是一个普通的input" />
-        <view class="controls"></view>
+        <textarea adjust-position="{{true}}"
+                  value="{{inputValue}}"
+                  cursor-spacing="120"
+                  bind:focus="onInputFocus"
+                  bind:blur="onInputBlur"
+                  bindinput="onInput"
+                  bind:confirm="onConfirm"
+                  confirm-hold="{{true}}"
+                  focus="{{false}}"
+                  confirm-type="send"
+                  placeholder="这是一个普通的input">
+        </textarea>
+        <!--<view class="controls"></view>-->
     </view>
 </view>

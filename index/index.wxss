@@ -5,10 +5,10 @@
 }
 
 .input-scroll-view {
-  height: calc(100vh - 180rpx);
+  height: calc(100vh - 560rpx);
 }
 .scroll-content {
-  min-height: calc(100vh - 180rpx);
+  min-height: calc(100vh - 560rpx);
   background: yellow;
   display: flex;
   flex-direction: column;
@@ -45,9 +45,9 @@
   width: 100%;
   bottom: 0;
 }
-.section input {
+.section textarea {
   background: lightsalmon;
   width: 100%;
-  margin-bottom: 100rpx;
-  height: 80rpx;
+  /*margin-bottom: 200rpx;*/
+  height: 260rpx;
 }
